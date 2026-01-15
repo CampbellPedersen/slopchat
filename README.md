@@ -4,14 +4,14 @@ Stand out from the crowd by having AI write your chat messages for you! Who know
 Built as a submission for [Class Clown's](https://classclown.cc) "Make the Worst Business" task.
 
 ## Features
-- Check Atrioc's Twitch chat for the current stream title, category and chat messages
-- Check the /r/atrioc subreddit for relevant topics and the latest Spoontrioc posts
-- Seamlessly send an AI-generated message to Atrioc's Twitch chat, no critical thinking required
-- Login using your own Twitch account
+- Seamlessly send an AI-generated messages to Atrioc's Twitch chat, you're basically a bot anyway
+- Generates relevant chat messages by checking Atrioc's Twitch stream title, category and chat messages
+- Shares the latest hot trends from the /r/atrioc subreddit so you can automatically repost Spoontrioc
+- Shamelessly login using your own Twitch account so you can be recognised for all your efforts
 
 ## Constraints
 - You must either be me or be following me on Twitch to use this service
 
 ## Future Improvements
-- Check top news stories so you don't have to read yourself!
+- Check top news stories so you don't have to read them yourself or critically think at all
 - Any other stupid ideas I come up with
