@@ -16,7 +16,7 @@ export const checkAtriocsStream = async (auth: TwitchAuthInfo): Promise<StreamIn
 
   const chatClient = getChatClient(auth, ['atrioc']);
   chatClient.connect();
-  const messages = await getChatMessageBatch({channel, client: chatClient});
+  const messages = await getChatMessageBatch({client: chatClient});
   chatClient.quit();
 
   return {

@@ -5,7 +5,7 @@ import { ChatMessage } from "../mcp/types.js";
 import { TwitchAuthInfo } from "../middleware/twitch-oauth.js";
 import { sleep } from "../util/sleep.js";
 
-export const SCOPES = ['chat:read', 'chat:edit'];
+export const SCOPES = ['chat:read', 'chat:edit', 'user:read:follows'];
 
 type GetUserParams = {
   login: string;
@@ -24,6 +24,17 @@ export const getUser = async ({client, login}: GetUserParams): Promise<User> => 
   return {
     id: user.id
   };
+}
+
+type CheckIfFollowsParams = {
+  followerLogin: string;
+  followeeLogin: string;
+  client: ApiClient;
+}
+
+export const checkIfFollows = async ({followerLogin, followeeLogin, client}: CheckIfFollowsParams): Promise<boolean> => {
+  const [follower, followee] = await client.users.getUsersByNames([followerLogin, followeeLogin]);
+  return follower.follows(followee)
 }
 
 type GetChannelParams = {

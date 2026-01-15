@@ -4,10 +4,14 @@ Stand out from the crowd by having AI write your chat messages for you! Who know
 Built as a submission for [Class Clown's](https://classclown.cc) "Make the Worst Business" task.
 
 ## Features
-- Check Atrioc's Twitch chat for the current stream title, category and chat messages!
-- Automagically send a chat message with the help of AI!
-- Login using your own Twitch account with their OAuth flow directly.
+- Check Atrioc's Twitch chat for the current stream title, category and chat messages
+- Check the /r/atrioc subreddit for relevant topics and the latest Spoontrioc posts
+- Seamlessly send an AI-generated message to Atrioc's Twitch chat, no critical thinking required
+- Login using your own Twitch account
+
+## Constraints
+- You must either be me or be following me on Twitch to use this service
 
 ## Future Improvements
-- Rejects requests of Twitch users that aren't following BigGreenAU on Twitch
+- Check top news stories so you don't have to read yourself!
 - Any other stupid ideas I come up with
