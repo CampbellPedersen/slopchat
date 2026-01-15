@@ -4,6 +4,9 @@
   "description": "An MCP server to help you stand out in Atrioc's Twitch chat",
   "main": "server.ts",
   "type": "module",
+  "imports": {
+    "#src/*": "./dist/*"
+  },
   "scripts": {
     "dev": "node --loader ts-node/esm src/server.ts",
     "build": "tsc",

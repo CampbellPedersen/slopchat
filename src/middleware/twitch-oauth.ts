@@ -1,7 +1,7 @@
-import { Request, Response, NextFunction } from "express";
-import { validateAccessToken, SCOPES } from "../services/twitch.js";
-import { PRM_PATH } from "../routes/oauth.js";
 import { AuthInfo } from "@modelcontextprotocol/sdk/server/auth/types.js";
+import { Request, Response, NextFunction } from "express";
+import { PRM_PATH } from "#src/routes/oauth.js";
+import { validateAccessToken, SCOPES } from "#src/services/external/twitch.js";
 
 export type TwitchAuthInfo = AuthInfo & {extra: {expiresIn: number, userId: string}};
 export type RequestWithTwitchAuth = Request & { auth?: TwitchAuthInfo };

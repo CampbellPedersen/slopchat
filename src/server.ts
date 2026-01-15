@@ -1,13 +1,13 @@
-import express from 'express';
-import dotenv from 'dotenv';
+import dotenv from "dotenv";
+import express from "express";
 dotenv.config();
 
 import { createMcpExpressApp } from "@modelcontextprotocol/sdk/server/express.js";
-import { corsMiddleware } from './middleware/cors.js';
-import { twitchOAuthMiddleware } from './middleware/twitch-oauth.js';
-import { oauthRouter } from './routes/oauth.js';
-import { mcpRouter } from './routes/mcp.js';
-import { followsBigGreenAUMiddleware } from './middleware/follows-biggreenau.js';
+import { corsMiddleware } from "./middleware/cors.js";
+import { twitchOAuthMiddleware } from "./middleware/twitch-oauth.js";
+import { oauthRouter } from "./routes/oauth.js";
+import { mcpRouter } from "./routes/mcp.js";
+import { followsBigGreenAUMiddleware } from "./middleware/follows-biggreenau.js";
 
 const HOST = process.env.HOST ?? 'localhost';
 export const MCP_URL = `https://${HOST}/mcp`;

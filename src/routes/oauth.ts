@@ -1,6 +1,6 @@
-import express, { NextFunction, Request, Response } from 'express';
-import { exchangeAuthorizationCodeForToken, SCOPES, validateAccessToken } from '../services/twitch.js';
-import { MCP_URL } from '../server.js';
+import express from "express";
+import { MCP_URL } from "#src/server.js";
+import { exchangeAuthorizationCodeForToken, SCOPES } from "#src/services/external/twitch.js";
 
 export const PRM_PATH = '/.well-known/oauth-protected-resource';
 const OAM_PATH = '/.well-known/oauth-authorization-server';

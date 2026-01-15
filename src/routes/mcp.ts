@@ -1,6 +1,6 @@
-import express, { Request } from 'express';
-import { RequestWithTwitchAuth } from '../middleware/twitch-oauth.js';
-import { getMcpServer } from '../mcp/mcp.js';
+import express from "express";
+import { RequestWithTwitchAuth } from "#src/middleware/twitch-oauth.js";
+import { getMcpServer } from "#src/mcp/mcp-server.js";
 
 export const mcpRouter = express.Router();
 

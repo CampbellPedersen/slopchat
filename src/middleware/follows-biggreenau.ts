@@ -1,6 +1,6 @@
-import { Request, Response, NextFunction } from "express";
-import { validateAccessToken, checkIfFollows, getApiClient } from "../services/twitch.js";
 import { AuthInfo } from "@modelcontextprotocol/sdk/server/auth/types.js";
+import { Request, Response, NextFunction } from "express";
+import { validateAccessToken, checkIfFollows, getApiClient } from "#src/services/external/twitch.js";
 
 export type TwitchAuthInfo = AuthInfo & {extra: {expiresIn: number, userId: string}};
 export type RequestWithTwitchAuth = Request & { auth?: TwitchAuthInfo };

@@ -1,9 +1,9 @@
-import { ApiClient } from '@twurple/api';
+import { ApiClient } from "@twurple/api";
 import { StaticAuthProvider } from "@twurple/auth";
 import { ChatClient } from "@twurple/chat";
-import { ChatMessage } from "../mcp/types.js";
-import { TwitchAuthInfo } from "../middleware/twitch-oauth.js";
-import { sleep } from "../util/sleep.js";
+import { TwitchAuthInfo } from "#src/middleware/twitch-oauth.js";
+import { ChatMessage } from "#src/types.js";
+import { sleep } from "#src/util/sleep.js";
 
 export const SCOPES = ['chat:read', 'chat:edit', 'user:read:follows'];
 

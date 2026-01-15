@@ -1,6 +1,6 @@
-import { getApiClient, getChatClient, getChatMessageBatch, getChannel, getUser } from "./twitch.js";
-import { TwitchAuthInfo } from "../middleware/twitch-oauth.js";
-import { ChatMessage } from "../mcp/types.js";
+import { getApiClient, getChatClient, getChatMessageBatch, getChannel, getUser } from "./external/twitch.js";
+import { TwitchAuthInfo } from "#src/middleware/twitch-oauth.js";
+import { ChatMessage } from "#src/types.js";
 
 type StreamInfo = {
   streamTitle: string;

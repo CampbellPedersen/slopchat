@@ -1,5 +1,5 @@
-import { TwitchAuthInfo } from "../middleware/twitch-oauth.js";
-import { getChatClient, sendMessage } from "./twitch.js";
+import { TwitchAuthInfo } from "#src/middleware/twitch-oauth.js";
+import { getChatClient, sendMessage } from "./external/twitch.js";
 
 type SendMessageToAtriocParams = {
   auth: TwitchAuthInfo;

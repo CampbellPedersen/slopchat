@@ -1,4 +1,4 @@
-import { RedditComment, RedditPost } from "../mcp/types.js"
+import { RedditComment, RedditPost } from "#src/types.js"
 
 const USER_AGENT = "notice-me-atrioc-mcp/0.1";
 

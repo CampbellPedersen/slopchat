@@ -48,3 +48,26 @@ export type RedditPost = z.infer<typeof RedditPostSchema>;
 export const CheckRedditOutputSchema = z.object({
   posts: z.array(RedditPostSchema).describe('A list of Reddit posts.')
 })
+
+const NewsCategorySchema = z.enum(['business', 'entertainment', 'general', 'health', 'science', 'sports', 'technology']);
+
+export type NewsCategory = z.infer<typeof NewsCategorySchema>;
+
+export const CheckNewsInputSchema = z.object({
+  search: z.string().optional().describe('A search term to search top stories by. Leave blank if not looking for a specific topic of news story.'),
+  category: NewsCategorySchema.optional().describe('A category to filter by. Usually, Atrioc is interested in business and tech.')
+});
+
+const NewsStorySchema = z.object({
+  title: z.string().describe('The title of the news story.'),
+  description: z.string().describe('A description of the news content'),
+  content: z.string('A snippet of the news story contents, truncated to 200 characters.'),
+  url: z.string('The URL of the news article. Use this to share the news story with Atrioc.'),
+  source: z.string('The source of the news article.'),
+});
+
+export type NewsStory = z.infer<typeof NewsStorySchema>;
+
+export const CheckNewsOutputSchema = z.object({
+  stories: z.array(NewsStorySchema).describe('A list of top news stories found.')
+});
