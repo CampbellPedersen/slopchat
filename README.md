@@ -1,7 +1,7 @@
 # slopchat
 Stand out from the crowd by having AI write your chat messages for you! Who knows, maybe Atrioc will notice your message and whoosh you onto screen! What a thrill! Please, use this codebase responsibly!
 
-Built as a submission for [Class Clown's](https://classclown.cc) "Make the Worst Business" task.
+Built as a submission for [Class Clown's](https://classclown.cc) "Make the Worst Business" assignment.
 
 ## Proof it Works
 
